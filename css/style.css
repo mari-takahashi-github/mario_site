@@ -90,11 +90,23 @@ h3{
     font-weight: 900;
     margin-bottom: 24px;
 }
-
+.txt_strong p{
+    font-size: x-large;
+    font-weight: 900;
+    line-height: 2;
+}
 
 @media screen and (max-width:1020px){
-    
-    
+    body{        
+        width: 100%;
+        padding: 0 30px;
+    }
+    .flex_moji{
+        width: 50%;
+    }
+    .flex_img{
+        width: 45%;
+    }
     
     
     
