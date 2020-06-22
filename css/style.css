@@ -12,6 +12,10 @@ body{
 	font-feature-settings: "palt";
 	letter-spacing: normal;
 	line-height: 1.6;
+    
+    background: url("../images/bg.jpg") 100% repeat-y;
+    width: 1000px;
+    margin: 0 auto;
 }
 *{
 	box-sizing: border-box;
@@ -21,11 +25,71 @@ img{
     max-width: 100%;
     height: auto;
 }
+a{
+    color: #955400;
+    text-decoration: none;
+    font-weight: 900;
+}
+p{
+    margin: 16px 0;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*header*/
+header{
+    margin: 24px 0 96px;
+}
+h1{
+    
+}
+.header_icon_list>.flex{
+    width: 400px;
+}
+.header_icon_list span{
+    display: block;
+    text-align: center;
+}
 
 
-
-
-
+/*main*/
+section{
+    margin-bottom: 96px;
+}
+h2{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 32px;
+}
+.jikosyoukai.flex{
+    align-items: flex-start;
+    margin-bottom: 32px;
+}
+.jikosyoukai.flex ul{
+    list-style: disc;
+}
+.jikosyoukai.flex ul>li{
+    margin: 16px 0;
+}
+.flex_moji{
+    width: 490px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.flex_img{
+    width: 490px;
+}
+h3{
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
 
 
 @media screen and (max-width:1020px){
