@@ -13,10 +13,15 @@ body{
 	letter-spacing: normal;
 	line-height: 1.6;
     
-    background: url("../images/bg.jpg") 100% repeat-y;
+    background: url("../images/bg.jpg") 100% repeat-y fixed;
+    width: 100%;
+}
+
+header,.main{
     width: 1000px;
     margin: 0 auto;
 }
+
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -44,8 +49,7 @@ ul{
 
 /*header*/
 header{
-    margin: 24px 0 96px;
-    width: 100%;
+    margin: 24px auto 96px;
 }
 h1{
     
@@ -94,16 +98,55 @@ h3{
     font-weight: 900;
     margin-bottom: 24px;
 }
-.txt_strong p{
+.txt_strong{
     font-size: x-large;
     font-weight: 900;
     line-height: 2;
 }
 
+.icon_outer{
+    display: block;
+}
+.icon_outer>ul.flex{
+    justify-content: flex-end;
+}
+.icon_outer>ul.flex>li{
+    margin-right: 16px;
+}
+.icon_outer>ul.flex>li:last-of-type{
+    margin-right: 0;
+}
+a.flex.icon{
+    width: 95px;
+    flex-direction: column;
+    margin-left: auto;
+}
+a.flex.icon>span{
+    text-align: center;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    background-color: #61C1BD;
+    padding: 56px 0;
+}
+footer>small{
+    display: block;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+
 @media screen and (max-width:1020px){
-    body{        
+    body{
+        
+    }
+    header,.main{
         width: 100%;
-        padding: 0 30px;
+        padding: 0 24px;
     }
     header.flex{
         flex-direction: column;
@@ -127,11 +170,37 @@ h3{
     }
     
     
-    
+    footer>small{
+        width: 100%;
+        padding-right: 24px;
+        font-size: 14px;
+    }
     
 }
 
 @media screen and (max-width:640px){
+    html{
+        font-size: 16px;
+    }
+    section{
+        margin-bottom: 56px;
+    }
+    h2{
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 32px;
+    }
+    h3{
+        font-size: 24px;
+        font-weight: 900;
+        margin-bottom: 24px;
+    }
+    
+    .header_icon_list>.flex>li{
+        
+        margin-right: 16px;
+    }
+    
     .jikosyoukai.flex{
         flex-direction: column;
         align-items: center;
@@ -147,6 +216,14 @@ h3{
         margin: 0 auto 16px;
     }
     
+    .txt_strong p{
+        font-size: large;
+    }
     
-    
+    a.flex.icon{
+        width: 55px;
+    }
+    a.flex.icon>span{
+        font-size: 14px;
+    }
 }
