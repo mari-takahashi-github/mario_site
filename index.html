@@ -14,21 +14,19 @@
     <link rel="stylesheet" href="./css/style.css"><!--スタイルCSSのhrefを記述-->
     
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/swiper.min.css">
     
     <script src=""></script><!--JavaScriptのファイルを記載-->
     
 </head>
 <body>
-    <header class="flex">
-        <h1><a href=""><img src="./images/site_logo.png" alt="真リオ＠Linux模索中"></a></h1>
-        
-        <div class="header_icon_list">
-            <ul class="flex">
-                <li><a href="https://note.com/mario_parallel" class="flex icon" target="_blank"><img src="./images/icon1.png" alt="noteへのリンク"><span>note</span></a></li>
-                <li><a href="https://cheerz.cz/artist/25378" class="flex icon" target="_blank"><img src="./images/icon2.png" alt="CHEERZへのリンク"><span>CHEERZ</span></a></li>
-                <li><a href="https://twitter.com/Mario_parallel" class="flex icon" target="_blank"><img src="./images/icon3.png" alt="Twitterへのリンク"><span>Twitter</span></a></li>
-                <li><a href="https://www.instagram.com/mario_mosakuchu/" class="flex icon" target="_blank"><img src="./images/icon4.png" alt="Instagramへのリンク"><span>Instagram</span></a></li>
-            </ul>
+    <header>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./images/header_pict1.png" alt="illust1"></div>
+                <div class="swiper-slide"><img src="./images/header_pict2.png" alt="illust2"></div>
+            </div>
         </div>
     </header>
     
@@ -39,116 +37,19 @@
             </p>
             
         </section>
-        <section>
-            <h2>自己紹介</h2>
-            <div class="flex jikosyoukai">
-                <div class="flex_img">
-                    <div><img src="./images/img1.jpg" alt="写真その1"></div>
-                </div>
-                <div class="flex_moji">
-                    <h3>略歴</h3>
-                    <p>
-                        1990年生まれ。「電車男」が流行る以前の小学校高学年時代に（マイナー寄りの）オタク女になる。
-                    </p>
-                    <p>
-                        大学卒業後にコールセンターを転々とする。過酷な？社会人生活の中、幼少期に憧れていた芸能への思いがふつふつと沸き、2014年（24歳）の頃に活動開始。2015年にHTB「平岸我楽多団」内のショートドラマ「天ノ裁」に抜擢。
-                    </p>
-                    <p>
-                        しかし、某札幌の音楽学校と金銭トラブルを起こしてしまい、芸能を辞めることに。
-                    </p>
-                    <p>
-                        その後、デジタルハリウッドSTUDIO札幌に通い、諸々の知識を習得のうえ2019年2月に卒業。しばらく経った頃にフリーランスとして開業。コーディングを中心にお仕事させていただく。
-                    </p>
-                    <p>
-                        ある日、お仕事の過程でDockerに触れ「Linuxは将来的に需要が伸びるに違いない！」とひらめいたことから、「Linuxのインフルエンサー」になることを決意。学習を開始。
-                    </p>
-                    <p>
-                        過去の経験の蓄積を活かしながら、「私らしく特技を活かしてお金をいただく機会につなげたい」「そのためには人に知られなければ」と思ったことから、講談社主催のオーディション「ミスiD2021」への応募を決めた。ただいま審査中。
-                    </p>
-                </div>
-            </div><!--.flex.jikosyoukai-->
-            <div class="flex jikosyoukai reverse">
-                <div class="flex_moji">
-                    <h3>特技</h3>
-                    <ul>
-                        <li>グラフィックソフトの操作とデザイン（Affinity DesignerとAffinity Photoを愛用中）</li>
-                        <li>Webサイトのコーディング（HTML＆CSS、Sass、JavaScript＆jQuery、WordPressと付随するPHP、Docker少々）</li>
-                        <li>イラスト制作</li>
-                        <li>そこらへんにいっぱいいる感じじゃない「声」</li>
-                    </ul>
-                </div>
-                <div class="flex_img">
-                    <img src="./images/img2.png" alt="写真その2">
-                </div>
-            </div><!--.flex.jikosyoukai-->
-        </section>
-        <section>
-            <h2>真リオを応援してください！</h2>
-            <div>
-                <p class="txt_strong">
-                    私、真リオは「ミスiD2021」に応募中です。
-                </p>
-                <p class="txt_strong">
-                    noteやCHEERZ、その他SNSなどを通して自身の魅力を知っていただけるよう努力いたします。
-                </p>
-                <p class="txt_strong">
-                    ぜひ、私を応援してください！
-                </p>
-            </div>
-        </section>
-        <section>
-            <h3>CHEERZとはなにか？</h3>
-            <p>
-                登録しているアイドルやアーティストを応援できるアプリ。
-            </p>
-            <p>
-                「チア」と呼ばれるポイントのようなものを相手に「投げる」ことで人気者にしていけるかも！？な双方向型のサービス。
-            </p>
-            <p>
-                真リオはルックスが目を引くタイプの人ではございませんが、フリーランス的話題や為になるかも？な話など、ツイッターより盛りだくさんに投稿していく、かもしれません。
-            </p>
-            <p>
-                あなたのチアは、真リオが世に出るためのきっかけになるはずです……！
-            </p>
-            <div class="icon_outer">
-                <a href="https://cheerz.cz/artist/25378" class="flex icon" target="_blank"><img src="./images/icon2.png" alt="CHEERZへのリンク"><span>CHEERZ</span></a>
-            </div>
-        </section>
-        <section>
-            <h3>noteとはなにか？</h3>
-            <p>
-                ブログのようにも使えるし、一歩進んだコンテンツの発信が可能なプラットフォーム。
-            </p>
-            <p>
-                今のところ（6月22日現在）投稿記事は一本だけ……。しかし、今後増やしていく決意です。
-            </p>
-            <div class="icon_outer">
-                <a href="https://note.com/mario_parallel" class="flex icon" target="_blank"><img src="./images/icon1.png" alt="noteへのリンク"><span>note</span></a>
-            </div>
-        </section>
-        <section>
-            <h3>その他SNSなど</h3>
-            <p>
-                おなじみツイッターは普段のお話に、Instagramはイラストの発表に使用しております。
-            </p>
-            <p>
-                ぜひ、フォローして、いいねやリプライなどを送ってください！皆様との交流で真リオはさらに面白みを発揮できるかもしれませんよ
-            </p>
-            <div class="icon_outer">
-                <ul class="flex">
-                    <li><a href="https://twitter.com/Mario_parallel" class="flex icon" target="_blank"><img src="./images/icon3.png" alt="Twitterへのリンク"><span>Twitter</span></a></li>
-                    <li><a href="https://www.instagram.com/mario_mosakuchu/" class="flex icon" target="_blank"><img src="./images/icon4.png" alt="Instagramへのリンク"><span>Instagram</span></a></li>
-                </ul>
-            </div>
-            
-            <a class="twitter-timeline" data-width="400" data-height="600" href="https://twitter.com/Mario_parallel?ref_src=twsrc%5Etfw">Tweets by Mario_parallel</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </section>
+        
 
-    </div>
+    </div><!-- //.main -->
     <footer>
         <small>
             &copy; 真リオ＠Linux模索中 All rights reserved.
         </small>
     </footer>
+    <script src="./js/swiper.min.js"></script>
+    <script>
+        let mySwiper = new Swiper('.swiper-container',{
+            loop: true,
+        });
+    </script>
 </body>
 </html>
