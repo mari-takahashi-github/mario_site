@@ -13,15 +13,16 @@ body{
 	letter-spacing: normal;
 	line-height: 1.6;
     
-    background: url("../images/bg.jpg") 100% repeat-y fixed;
+    background: url("../images/bg.jpg") repeat-y 100% ;
     width: 100%;
 }
 
-header,.main{
-    width: 1000px;
-    margin: 0 auto;
-}
 
+
+
+.main{
+
+}
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -49,8 +50,51 @@ ul{
 
 /*header*/
 header{
-    margin: 24px auto 96px;
+    width: 100vw;
+    height: 100vh;
 }
+.swiper-slide-active .slide-img,
+.swiper-slide-duplicate-active .slide-img,
+.swiper-slide-prev .slide-img { /* 12秒かけて拡大させる */
+    -webkit-animation: zoomUp 12s linear 0s;
+    animation: zoomUp 12s linear 0s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.slide-img.img01{
+    background: url("../images/header_pict1.png") center;
+    width: 100vw;
+    height: 100vh;
+}
+.slide-img.img02{
+    background: url("../images/header_pict2.png") top;
+    width: 100vw;
+    height: 100vh;
+}
+@-webkit-keyframes zoomUp {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+  }
+  
+  @keyframes zoomUp { /* 1.15倍させる指定 */
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100% {
+        -webkit-transform: scale(1.15);
+        transform: scale(1.15);
+    }
+  }
+
+
+
 h1{
     
 }
@@ -144,9 +188,11 @@ footer>small{
     body{
         
     }
-    header,.main{
-        width: 100%;
-        padding: 0 24px;
+    header{
+        
+    }
+    .main{
+
     }
     header.flex{
         flex-direction: column;
