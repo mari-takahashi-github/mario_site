@@ -13,16 +13,9 @@ body{
 	letter-spacing: normal;
 	line-height: 1.6;
     
-    background: url("../images/bg.jpg") repeat-y 100% ;
     width: 100%;
 }
 
-
-
-
-.main{
-
-}
 *{
 	box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -32,7 +25,7 @@ img{
     height: auto;
 }
 a{
-    color: #955400;
+    /* color: #955400; */
     text-decoration: none;
     font-weight: 900;
 }
@@ -50,8 +43,9 @@ ul{
 
 /*header*/
 header{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+    position: relative;
 }
 .swiper-slide-active .slide-img,
 .swiper-slide-duplicate-active .slide-img,
@@ -73,16 +67,6 @@ header{
     width: 100vw;
     height: 100vh;
 }
-@-webkit-keyframes zoomUp {
-    0% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    100% {
-        -webkit-transform: scale(1.15);
-        transform: scale(1.15);
-    }
-  }
   
   @keyframes zoomUp { /* 1.15倍させる指定 */
     0% {
@@ -95,23 +79,70 @@ header{
     }
   }
 
-
-
+.header_wrapper{
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 h1{
-    
-}
-.header_icon_list>.flex{
-    width: 400px;
-}
-.header_icon_list span{
-    display: block;
-    text-align: center;
+    font-size: 56px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 32px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
+nav{
+    width: 1200px;
+    margin: 56px auto;
+}
+.menu,
+.language{
+    background-color: #444444;
+    padding: 16px;
+    margin-bottom: 56px;
+    border-radius: 16px;
+}
+.menu a,
+.language a{
+    width: 100%;
+    padding: 32px 16px;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    border-radius: 16px;
+    position: relative;
+    font-size: 24px;
+}
+.menu a:hover,
+.language a:hover{
+    background-color: lightgray;
+    color: #444;
+}
+.menu{
+    width: 500px;
+    margin-right: auto;
+}
+.language{
+    width: 300px;
+    margin-left: auto;
+}
+.menu a.active,
+.language a.active{
+    background-color: #fff;
+    color: #444;
+}
 
 /*main*/
-.text_right{
-    text-align: right;
+.main{
+    width: 1200px;
+    margin: 0 auto;
 }
 section{
     margin-bottom: 96px;
@@ -121,55 +152,7 @@ h2{
     font-weight: 900;
     margin-bottom: 32px;
 }
-.jikosyoukai.flex{
-    align-items: flex-start;
-    margin-bottom: 32px;
-}
-.jikosyoukai.flex ul{
-    list-style: disc;
-}
-.jikosyoukai.flex ul>li{
-    margin: 16px 0;
-}
-.flex_moji{
-    width: 490px;
-    margin-left: 0;
-    margin-right: 0;
-}
-.flex_img{
-    width: 490px;
-}
-h3{
-    font-size: 24px;
-    font-weight: 900;
-    margin-bottom: 24px;
-}
-.txt_strong{
-    font-size: x-large;
-    font-weight: 900;
-    line-height: 2;
-}
 
-.icon_outer{
-    display: block;
-}
-.icon_outer>ul.flex{
-    justify-content: flex-end;
-}
-.icon_outer>ul.flex>li{
-    margin-right: 16px;
-}
-.icon_outer>ul.flex>li:last-of-type{
-    margin-right: 0;
-}
-a.flex.icon{
-    width: 95px;
-    flex-direction: column;
-    margin-left: auto;
-}
-a.flex.icon>span{
-    text-align: center;
-}
 
 
 /*footer*/
@@ -186,37 +169,37 @@ footer>small{
 }
 
 
-@media screen and (max-width:1020px){
-    body{
-        
+@media screen and (max-width:1240px){
+    h1{
+        font-size: 32px;
+        padding: 32px;
+        width: fit-content;
     }
-    header{
-        
-    }
-    .main{
-
-    }
-    header.flex{
-        flex-direction: column;
+    nav{
         width: 100%;
+        padding: 0 30px;
     }
-    .header_icon_list>.flex{
-        width: 100%;
-        margin: 32px auto 0;
+    .menu a,
+    .language a{
+        padding: 16px;
+        font-size: 18px;
     }
-    .header_icon_list>.flex>li{
-        margin-right: 16px;
-    }
-    .header_icon_list>.flex>li:last-of-type{
-        margin-right: 0;
-    }
-    .flex_moji{
-        width: 50%;
-    }
-    .flex_img{
+    .menu{
         width: 45%;
     }
+    .language{
+        width: 30%;
+    }
     
+    
+    /* main */
+    .main{
+        width: 1000px;
+    }
+    h2{
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
     
     footer>small{
         width: 100%;
@@ -225,53 +208,43 @@ footer>small{
     }
     
 }
+@media screen and (max-width:1024px){
+    .menu{
+        width: 70%;
+        
+    }
+    .language{
+        width: 40%;
+        
+    }
+    /* main */
+    .main{
+        width: 100%;
+        padding: 30px;
+    }
+}
 
 @media screen and (max-width:640px){
     html{
         font-size: 16px;
     }
+
+    .menu{
+        width: 100%;
+        flex-direction: column;
+    }
+    .language{
+        width: 45%;
+        flex-direction: column;
+    }
+
+
     section{
         margin-bottom: 56px;
     }
-    h2{
-        font-size: 28px;
-        font-weight: 900;
-        margin-bottom: 32px;
-    }
-    h3{
-        font-size: 24px;
-        font-weight: 900;
-        margin-bottom: 24px;
-    }
-    
-    .header_icon_list>.flex>li{
-        
-        margin-right: 16px;
-    }
-    
-    .jikosyoukai.flex{
-        flex-direction: column;
-        align-items: center;
-    }
-    .jikosyoukai.flex.reverse{
-        flex-direction: column-reverse;
-    }
-    .flex_moji{
-        width: 100%;
-    }
-    .flex_img{
-        width: 90%;
-        margin: 0 auto 16px;
-    }
-    
-    .txt_strong p{
-        font-size: large;
-    }
-    
-    a.flex.icon{
-        width: 55px;
-    }
-    a.flex.icon>span{
-        font-size: 14px;
-    }
+
+
+
+
+
 }
