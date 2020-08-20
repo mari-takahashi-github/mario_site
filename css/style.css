@@ -63,6 +63,8 @@ header{
 }
 .slide-img.img01{
     background: url("../images/header_pict1.png") center;
+    background-size: cover;
+    background-repeat: no-repeat;
     width: 100vw;
     height: 100vh;
 }
