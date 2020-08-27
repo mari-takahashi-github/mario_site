@@ -241,7 +241,19 @@ h2{
 }
 
 
-/* illustration */
+/* illustration & Web*/
+.setsumei{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.web .syoukai{
+    width: 1200px;
+    margin: 0 auto 56px;
+}
+.syoukai_inner_right{
+    width: 678px;
+}
 
 /*footer*/
 footer{
@@ -261,7 +273,8 @@ footer>small{
 @media screen and (max-width:1240px){
     h1{
         font-size: 32px;
-        padding: 32px;
+        padding: 0;
+        margin: 30px 30px 0;
         width: fit-content;
     }
     body.illustration h1,
@@ -273,6 +286,7 @@ footer>small{
     nav{
         width: 100%;
         padding: 0 30px;
+        margin: 30px 0;
     }
     .menu a,
     .language a{
@@ -326,6 +340,19 @@ footer>small{
         margin-right: auto;
     }
 
+
+    /* illustration & Web*/
+    .setsumei{
+        width: calc(100% - 60px);
+        
+    }
+    .web .syoukai{
+        width: calc(100% - 60px);   
+    }
+    .syoukai_inner_right{
+        width: 50%;
+        margin-left: 32px;
+    }
     footer>small{
         width: 100%;
         padding-right: 24px;
