@@ -218,35 +218,51 @@ h2{
 .post_icon:hover::before{
     content: "";
     display: block;
-    width: 112px;
+    width: 80px;
     height: 6px;
     border-radius: 2px;
     background-color: #444;
     transform: rotate(45deg);
     position: absolute;
-    top: 30px;
-    left: -160px;
+    top: 0px;
+    left: -100px;
 }
 .post_icon:hover::after{
     content: "";
     display: block;
-    width: 112px;
+    width: 80px;
     height: 6px;
     border-radius: 2px;
     background-color: #444;
     transform: rotate(-45deg);
     position: absolute;
-    bottom: 30px;
-    left: -160px;
+    bottom: 0px;
+    left: -100px;
 }
-
+.post_icon img{
+    width: 50%;
+}
 
 /* illustration & Web*/
 .setsumei{
     width: 1200px;
     margin: 0 auto;
 }
-
+.setsumei.flex>div:first-of-type{
+    width: 45%;
+}
+.setsumei .flex.skill{
+    width: 45%;
+}
+.setsumei .flex.skill>div:first-of-type{
+    width: 30%;
+}
+.setsumei .flex.skill>div:last-of-type{
+    width: 60%;
+}
+.skill{
+    margin-top: 0px;
+}
 .web .syoukai{
     width: 1200px;
     margin: 0 auto 56px;
@@ -274,7 +290,6 @@ footer>small{
     h1{
         font-size: 32px;
         padding: 0;
-        margin: 30px 30px 0;
         width: fit-content;
     }
     body.illustration h1,
@@ -344,7 +359,7 @@ footer>small{
     /* illustration & Web*/
     .setsumei{
         width: calc(100% - 60px);
-        
+        margin: 0 auto;
     }
     .web .syoukai{
         width: calc(100% - 60px);   
@@ -369,12 +384,21 @@ footer>small{
         width: 40%;
         
     }
+    .menu a,
+    .language a{
+        font-size: 16px;
+        padding: 10px;
+    }
+
     /* main */
     .main{
         width: 100%;
         /* padding: 30px; */
     }
-
+    h2{
+        font-size: 32px;
+        margin: 0 auto 32px;
+    }
     .wrapper{
         margin: 112px 0 0;
         flex-direction: column;
@@ -405,24 +429,51 @@ footer>small{
         margin-left: auto;
         padding-right: 88px;
     }
+
+    .setsumei{
+        flex-direction: column;
+    }
+    .setsumei.flex>div:first-of-type{
+        width: 85%;
+    }
+    .setsumei .flex.skill{
+        width: 85%;
+    }
+    .setsumei .flex.skill>div:first-of-type{
+        width: 30%;
+    }
+    .setsumei .flex.skill>div:last-of-type{
+        width: 60%;
+    }
+    .skill{
+        margin-top: 56px;
+    }
 }
 
 @media screen and (max-width:640px){
     html{
         font-size: 16px;
     }
+    body.top h1{
+        font-size: 32px;
+    }
+    h2{
+        font-size: 24px;
+        margin: 0 auto 32px;
+    }
     nav{
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
+        padding: 0 20px;
     }
     .menu{
-        width: 50%;
+        width: 55%;
         flex-direction: column;
     }
     .language{
-        width: 45%;
+        width: 40%;
         flex-direction: column;
     }
     .menu li,
@@ -458,6 +509,17 @@ footer>small{
         width: calc(100% - 60px);
         margin: 112px auto 0;
         padding: 0;
+    }
+
+
+    /* illustration & Web*/
+    .syoukai_inner.flex{
+        flex-direction: column;
+    }
+    .syoukai_inner_right{
+        width: 85%;
+        margin-left: 0;
+        margin-top: 32px;
     }
 
 
