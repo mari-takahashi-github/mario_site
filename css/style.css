@@ -275,9 +275,10 @@ h2{
     width: 1200px;
     margin: 0 auto;
 }
-.artwork img{
-    width: 500px;
-
+.artwork>a{
+    max-width: 530px;
+    display: block;
+    margin: 0 auto;
 }
 
 
@@ -378,6 +379,11 @@ footer>small{
         width: 50%;
         margin-left: 32px;
     }
+
+    .artwork{
+        width: calc(100% - 60px);
+    }
+    
     footer>small{
         width: 100%;
         padding-right: 24px;
@@ -457,6 +463,11 @@ footer>small{
     }
     .skill{
         margin-top: 56px;
+    }
+    .artwork img{
+        max-width: 100%;
+        min-width: 300px;
+    
     }
 }
 
