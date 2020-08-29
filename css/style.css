@@ -270,6 +270,16 @@ h2{
 .syoukai_inner_right{
     width: 678px;
 }
+.artwork{
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+.artwork img{
+    width: 500px;
+
+}
+
 
 /*footer*/
 footer{
